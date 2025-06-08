@@ -1,9 +1,9 @@
 from setuptools import setup
 
 setup(
-    name="selence",
+    name="mllib",
     version="0.0.1",
-    description="You like pytorch? You like micrograd? You like tinygrad? You love selence!",
+    description="",
     author="Axel Lundberg",
     license="MIT",
 )

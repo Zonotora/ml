@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 import numpy as np
 
 n = 1000
@@ -73,16 +74,10 @@ for i in range(1000):
         w_o -= lr * dw_o
         b_o -= lr * db_o
 
-import matplotlib.pyplot as plt
-
 preds = []
 for j in range(len(X_test)):
     y_pred = forward(X_test[j].reshape(2, 1))
-    print(y_pred)
     preds.append(y_pred[0][0] * 100)
-
-mean = sum(Y_test) / len(Y_test)
-print(mean)
 
 plt.plot(Y_test)
 plt.plot(preds)
